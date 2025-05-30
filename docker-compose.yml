@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  crypto-predictor:
+    build: .
+    volumes:
+      - ~/Документы/project_predict_coins/data:/app/data  
+      - ./src:/app/src    
+    working_dir: /app
